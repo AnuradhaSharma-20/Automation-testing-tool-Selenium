@@ -1,0 +1,238 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-03T12:26:41.529Z",
+    "end": "2024-06-03T12:27:15.872Z",
+    "duration": 34343,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ed394d0c-9430-47b9-8d9d-5952dc27a625",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook in \"{root}\"",
+          "fullTitle": "\"before all\" hook in \"{root}\"",
+          "timedOut": false,
+          "duration": 573,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "const chaiModule = await import('chai');\nexpect = chaiModule.expect;\nsetupmodule = await import('../../setup.js');\ncreateUserTest = setupmodule.createUserTest;\nviewAllUsersTest = setupmodule.viewAllUsersTest;\neditUserTest = setupmodule.editUserTest;\ndeleteUserTest = setupmodule.deleteUserTest;",
+          "err": {},
+          "uuid": "2ffcfb58-e2eb-463b-8061-a9e51b959b33",
+          "parentUUID": "ed394d0c-9430-47b9-8d9d-5952dc27a625",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "56612aa0-115b-4434-8dd2-a701cf25c1d4",
+          "title": "E2E Test",
+          "fullFile": "C:\\Users\\anura\\OneDrive\\Documents\\Desktop\\Test-Submission-Task-1\\__tests__\\e2e\\e2e.test.js",
+          "file": "\\__tests__\\e2e\\e2e.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should create a user successfully",
+              "fullTitle": "E2E Test should create a user successfully",
+              "timedOut": false,
+              "duration": 11272,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const results = await createUserTest();\nconsole.log(results);\nexpect(results).to.equal('Create user test passed!',results);",
+              "err": {},
+              "uuid": "5b474038-2d65-46c1-843c-7c1b44e2e04f",
+              "parentUUID": "56612aa0-115b-4434-8dd2-a701cf25c1d4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5b474038-2d65-46c1-843c-7c1b44e2e04f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11272,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "dfdb0bc0-68e4-4525-8dcc-e1ea97efc6c1",
+          "title": "E2E Test",
+          "fullFile": "C:\\Users\\anura\\OneDrive\\Documents\\Desktop\\Test-Submission-Task-1\\__tests__\\e2e\\e2e.test.js",
+          "file": "\\__tests__\\e2e\\e2e.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should view all users successfully",
+              "fullTitle": "E2E Test should view all users successfully",
+              "timedOut": false,
+              "duration": 6908,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const results = await viewAllUsersTest();\nexpect(results).to.equal('View all users test passed!',results);",
+              "err": {},
+              "uuid": "3d72f54f-b63d-4991-aa90-3974be96d3a5",
+              "parentUUID": "dfdb0bc0-68e4-4525-8dcc-e1ea97efc6c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3d72f54f-b63d-4991-aa90-3974be96d3a5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6908,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "a8542084-b698-4868-8ed9-42247b76896f",
+          "title": "E2E Test",
+          "fullFile": "C:\\Users\\anura\\OneDrive\\Documents\\Desktop\\Test-Submission-Task-1\\__tests__\\e2e\\e2e.test.js",
+          "file": "\\__tests__\\e2e\\e2e.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should edit a user successfully",
+              "fullTitle": "E2E Test should edit a user successfully",
+              "timedOut": false,
+              "duration": 6900,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const results = await editUserTest(26);\nexpect(results).to.equal('Edit user test passed!',results);",
+              "err": {},
+              "uuid": "54e69a18-7d97-42cb-bff0-45b55ae6088c",
+              "parentUUID": "a8542084-b698-4868-8ed9-42247b76896f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "54e69a18-7d97-42cb-bff0-45b55ae6088c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6900,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "3ac78582-3c3a-4012-a5a8-551f42bd8e02",
+          "title": "E2E Test",
+          "fullFile": "C:\\Users\\anura\\OneDrive\\Documents\\Desktop\\Test-Submission-Task-1\\__tests__\\e2e\\e2e.test.js",
+          "file": "\\__tests__\\e2e\\e2e.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should delete a user successfully",
+              "fullTitle": "E2E Test should delete a user successfully",
+              "timedOut": false,
+              "duration": 8648,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const results = await deleteUserTest(51);\nexpect(results).to.equal('Delete user test passed!',results);",
+              "err": {},
+              "uuid": "c1257553-1f97-46a3-9b80-9092a479ba74",
+              "parentUUID": "3ac78582-3c3a-4012-a5a8-551f42bd8e02",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c1257553-1f97-46a3-9b80-9092a479ba74"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8648,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "e2e",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "e2e"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
